@@ -11,3 +11,7 @@ routes = [
 [build]
 command = "pnpm run build"
 watch_dir = "src"
+
+# wrangler.toml (wrangler v3.88.0^)
+[observability.logs]
+enabled = true
