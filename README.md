@@ -7,6 +7,7 @@ Cloudflare Workers implementation of Next.js Image optimization using Cloudflare
 This project provides a cost-effective alternative to Vercel's image optimization. It implements Next.js's `/_next/image` endpoint using Cloudflare Workers and Cloudflare Images.
 
 **Cost Comparison:**
+
 - Vercel: $5/1000 images
 - Cloudflare Images: $0.5/1000 images (10x cheaper)
 
@@ -78,6 +79,7 @@ The worker intercepts requests to `/_next/image` and processes them using Cloudf
 - `f`: Format (webp, jpeg, png, avif)
 
 Example:
+
 ```
 https://yourdomain.com/_next/image?url=https://example.com/image.jpg&w=800&q=80&f=webp
 ```

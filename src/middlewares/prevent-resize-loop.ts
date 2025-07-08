@@ -1,4 +1,4 @@
-import { createMiddleware } from 'hono/factory';
+import { createMiddleware } from "hono/factory";
 
 export const preventResizeLoop = createMiddleware(async (c, next) => {
   const via = c.req.header("via") ?? "";

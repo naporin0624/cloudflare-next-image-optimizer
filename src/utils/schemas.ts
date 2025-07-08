@@ -1,6 +1,11 @@
 import { z } from "zod";
 
-const Format = z.union([z.literal("avif"), z.literal("webp"), z.literal("jpeg"), z.literal("png")]);
+const Format = z.union([
+  z.literal("avif"),
+  z.literal("webp"),
+  z.literal("jpeg"),
+  z.literal("png"),
+]);
 
 export const TransformOptions = z.object({
   blur: z.coerce.number().min(0).max(250).optional(),

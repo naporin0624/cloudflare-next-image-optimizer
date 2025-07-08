@@ -19,6 +19,7 @@ This is a Cloudflare Workers implementation of Next.js Image optimization. It pr
 ## Architecture
 
 The project uses:
+
 - **Hono** as the web framework
 - **Zod** for request validation
 - **Cloudflare Workers** runtime with image transformation
@@ -34,6 +35,7 @@ The project uses:
 ### Path Aliases
 
 The project uses TypeScript path aliases:
+
 - `@/*` → `./src/*`
 - `@middlewares/*` → `./src/middlewares/*`
 - `@handlers/*` → `./src/handlers/*`
@@ -42,8 +44,9 @@ The project uses TypeScript path aliases:
 ## Image Transformation
 
 The service accepts Next.js compatible image parameters:
+
 - `width`/`w` - Image width
-- `height`/`h` - Image height  
+- `height`/`h` - Image height
 - `quality`/`q` - Image quality (0-100)
 - `format` - Output format (avif, webp, jpeg, png)
 - `blur` - Blur amount (0-250)
