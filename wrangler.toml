@@ -1,0 +1,13 @@
+name = "cloudflare-next-images"
+main = "./dist/index.js"
+compatibility_date = "2024-01-01"
+workers_dev = false
+
+# Routes for image optimization
+routes = [
+  { pattern = "ristill.club/_next/*", zone_name = "ristill.club" },
+]
+
+[build]
+command = "pnpm run build"
+watch_dir = "src"
