@@ -25,9 +25,14 @@
     "preview": "wrangler dev --local-protocol=https",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["cloudflare", "workers", "next.js", "image-optimization"],
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "next.js",
+    "image-optimization"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "packageManager": "pnpm@10.7.1",
   "dependencies": {
     "@hono/zod-validator": "^0.7.0",
@@ -36,7 +41,10 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250705.0",
+    "@textlint-ja/textlint-rule-preset-ai-writing": "^1.5.0",
     "@types/node": "^24.0.10",
+    "textlint": "^15.2.0",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3",
     "wrangler": "^4.23.0"
